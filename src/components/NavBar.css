@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: large;
+}
+
+.nav_div {
+  width: 100%;
+  height: 3.5vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #f3f3f3;
+  border-bottom: 1px solid rgb(227, 227, 227);
+}
+
+.left_div {
+  position: relative;
+  right: 10vw;
+  width: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5vw;
+}
+
+.left_div .logo {
+  width: 2.5vw;
+  border-radius: 100%;
+}
+
+.navigation {
+  width: 20vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navigation #nvLink {
+  text-decoration: none;
+  color: rgb(102, 102, 102);
+}
+
+.btn .small_btn {
+  font-size: large;
+  padding: 5px 8px;
+  position: relative;
+  left: 7vw;
+  background: linear-gradient(135deg, #4f8cff, #7fb3ff);
+  border: none;
+  border-radius: 8px;
+  color: white;
+}
+
+.btn .small_btn:hover {
+  background: linear-gradient(135deg, #327aff, #5b9dff);
+}
+
+.isActive {
+  border-bottom: 1px solid gray;
+}
+
+@media (max-width: 768px) {
+
+  * {
+    font-size: 14px;
+  }
+
+  .nav_div {
+    height: 60px;
+    padding: 0 10px;
+    justify-content: space-between;
+  }
+
+  .left_div {
+    position: static;
+    width: auto;
+    gap: 8px;
+  }
+
+  .left_div .logo {
+    width: 35px;
+  }
+
+  .navigation {
+    width: auto;
+    gap: 15px;
+  }
+
+  .btn .small_btn {
+    position: static;
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+}
+
+.mobile_menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile_menu {
+    display: flex;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    padding: 10px;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 100;
+  }
+}
+
+.menu_icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu_icon {
+    display: block;
+  }
+}
+
+.navigation {
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  .navigation {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .nav_div {
+    justify-content: space-between;
+  }
+
+  .btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+}

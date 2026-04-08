@@ -1,0 +1,48 @@
+.about_container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+
+  text-align: center;
+  padding: 20px;
+
+  background: linear-gradient(135deg, #dbe8ff, #ffffff);
+  font-family: Arial, sans-serif;
+}
+
+.about_profile_img {
+  width: 90px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about_title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.about_description {
+  max-width: 420px;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.about_btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #4a7cff;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.about_btn:hover {
+  background: #2f5fe3;
+  transform: translateY(-2px);
+}
