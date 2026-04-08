@@ -71,7 +71,6 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  /* 💥 Isse empty state mein width full rahegi */
   width: 100%; 
   box-sizing: border-box;
 }
@@ -79,9 +78,9 @@
 .ai-message {
   align-self: flex-start;
   max-width: 75%;
-  background: #f1f1f1;
+  background: #f8f8f8;
   padding: 10px 14px;
-  border-radius: 15px;
+  border-radius: 15px 15px 15px 3px;
   animation: fadeIn 0.3s ease-in-out;
 }
 
@@ -91,7 +90,7 @@
   background: #4f8cff;
   color: white;
   padding: 10px 14px;
-  border-radius: 15px;
+  border-radius: 15px 15px 3px 15px;
   animation: fadeIn 0.3s ease-in-out;
 }
 
