@@ -52,7 +52,7 @@ const Chat = (props) => {
           "Content-Type": "application/json"
         },
         body: JSON.stringify({
-          "model": "google/gemini-2.0-flash-lite-001",
+          "model": "google/gemini-2.5-flash",
           "messages": [
             {
               "role": "system",
@@ -62,7 +62,8 @@ const Chat = (props) => {
               "role": "user",
               "content": prompt
             }
-          ]
+          ],
+          "max_tokens": 512,
         })
       });
 
